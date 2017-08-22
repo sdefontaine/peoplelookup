@@ -2,5 +2,5 @@ ID,First,Last,Address,Age,Interests,Picture
 1,Bob,Smith,"150 Main St, Sebastopol, CA 95472",25,"Cooking",bob.jpg
 2,Stephan,"de Fontaine","8581 Bodega Hwy, Sebastopol, CA",44,"Skiing, Hiking",stephan.jpg
 3,Dave,Roberts,"125 A St, Salt Lake City, UT 84044",23,"Coding",
-4,Bill,Smith,"999 Saratoga Ave, San Jose, CA 95129",23,"Biking,Diving,Traveling",
-5,Don,"Di Martini","200 4th St, Santa Rosa, CA 95478",23,"Biking,Diving,Traveling",
+4,Bill,Smith,"999 Saratoga Ave, San Jose, CA 95129",23,"Biking,Diving,Traveling",bill.jpg
+5,Don,"Di Martini","200 4th St, Santa Rosa, CA 95478",23,"Biking,Diving,Traveling",don.jpg
