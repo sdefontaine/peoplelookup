@@ -22,7 +22,7 @@ namespace PeopleLookup.Tests
 
             var builder = new DbContextOptionsBuilder<PeopleContext>();
 
-            builder.UseSqlServer($"Server=(localdb)\\mssqllocaldb;Database=People;Trusted_Connection=True;MultipleActiveResultSets=true")
+            builder.UseSqlServer($"Server=(localdb)\\mssqllocaldb;Database=PeopleTest;Trusted_Connection=True;MultipleActiveResultSets=true")
                     .UseInternalServiceProvider(serviceProvider);
 
             var context = new PeopleContext(builder.Options);
