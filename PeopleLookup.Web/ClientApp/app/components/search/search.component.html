@@ -1,0 +1,58 @@
+<div class="col-md-10">
+    <div class="panel-primary">
+        <h2>Search People</h2>
+
+        <div class="panel-body">
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-6">
+
+                        <input class="form-control" type="text" [(ngModel)]="Name" placeholder="First, Last or First and Last Name" #name="ngModel" required />
+                        <input type="checkbox" [(ngModel)]="slow" /> Simulate slow search
+                    </div>
+                    <div class="col-md-4">
+                        <input class="btn btn-primary" type="button" (click)="submit();" value="Search" />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <br />
+                <div *ngIf="name.errors && searched" class="alert alert-danger text-center">Name is required</div>
+            </div>
+
+
+            <div *ngIf="hideElement" id="loadingDiv">
+            </div>
+            <div class="row">
+                <p *ngIf="people && people.length == 0"><i>No records found</i></p>
+                <table class="table table-striped results" *ngIf="people && people.length > 0">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>First</th>
+                            <th>Last</th>
+                            <th>Address</th>
+                            <th>Age</th>
+                            <th>Interests</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let person of people">
+                            <td><img *ngIf="person.Picture" src="/images/{{ person.Picture }}" height="50" width="50"></td>
+                            <td>{{ person.First }}</td>
+                            <td>{{ person.Last }}</td>
+                            <td>{{ person.Address }}</td>
+                            <td>{{ person.Age }}</td>
+                            <td>{{ person.Interest }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
